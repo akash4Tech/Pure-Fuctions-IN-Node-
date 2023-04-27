@@ -57,7 +57,46 @@ console.log("Output4 :",count);
 
 // 5. Write a function that takes an array of objects with a category property and returns an 
 // object where the keys are the categories, and the values are arrays of objects with that 
-// category. Use  
+// category. Use 
+
+
+
+//category of a key
+
+
+const arr=[{
+    name:'Phill',
+    age:18,
+    std:12,
+    address:'chennai'
+},
+{
+    name:'ram',
+    age:18,
+    std:12,
+    address:'chennai'
+},
+{
+    name:'alan',
+    age:17,
+    std:11,
+    address:'chennai'
+},
+{
+    name:'stew',
+    age:16,
+    std:10,
+    address:'chennai'
+}]
+obj={}
+arr.map(e=>{
+    if(! (e.std in obj)){
+        obj[e.std]=[]
+    }
+    obj[e.std].push(e)
+});
+
+console.log("Output5 :",obj);
 
 
 // 6. Write a function that takes an array of strings and returns a new array with only the 
