@@ -16,6 +16,14 @@
 // accomplish this. 
 
 
+    //number of word Occurs 
+
+let  a= ['cap','rat','cap','map','cap','rat','cap','map','cap','rat','cap','map'];
+
+const count = {};
+a.map(e=>{count[e]=(count[e]||0)+1});
+console.log("outpu 3:",count) ;
+
 
 
 // 3. Write a function that takes an array of words and returns an object where the keys are 
@@ -34,6 +42,17 @@ console.log("outpu 3:",count) ;
 // 4. Write a function that takes a string and returns an object where the keys are the 
 // characters in the string and the values are the number of times each character appears 
 // in the string. Use the Map object to accomplish this. 
+
+
+    //numbers of charector occurance of string
+
+let char ="hai akash";
+
+let count = {};
+str = char.split('');
+str.map((e)=>{count[e]=(count[e]||0)+1})
+console.log("Output4 :",count);
+
 
 
 // 5. Write a function that takes an array of objects with a category property and returns an 
